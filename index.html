@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Alison Koo is under construction</title>
+</head>
+
+<body>
+<div class="wrapper">    
+ <h1>
+ 🚧 <span class="highlight">Under construction</span> 🚧<br>
+     Alison is learning how to code her portfolio...
+ </h1>
+
+ <div class="container">
+ <p>if you’d like to stalk her:
+    <a href="https://www.linkedin.com/in/kooalison/" target="_blank">Linkedin</i></a>,
+    <a href="https://www.instagram.com/alisoniskool/" target="_blank">Instagram</i></a>,
+    <span class="email-copy" onclick="copyEmail()">alisonkoo10@gmail.com<span class="copied-label" id="copiedLabel">copied!</span></span>
+ </p>
+ </div>
+</div>
+
+<script>
+  function copyEmail() {
+    const email = atob('YWxpc29ua29vMTBAZ21haWwuY29t');
+    navigator.clipboard.writeText(email).then(() => {
+      const label = document.getElementById('copiedLabel');
+      label.classList.add('show');
+      setTimeout(() => label.classList.remove('show'), 2000);
+    });
+  }
+
+</script>
+</body> 
+</html>

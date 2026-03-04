@@ -1,0 +1,100 @@
+body {
+    font-family: Onest, sans-serif;
+    background-color: #F5F4F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #281A3E;
+    font-weight: 500;
+    font-size: 2.3rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+p {
+    color: #6E657D;
+    font-weight: 600;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.highlight {
+    color: #9958ED;
+    font-weight: 700;
+}
+
+.wrapper {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #6E657D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9958ED;
+}
+
+
+/* Email code styles */
+span:hover{
+    color: #9958ED;
+}
+   
+.email-copy {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+ .copied-label {
+    position: absolute;
+    bottom: calc(70% + 5px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    font-size: 0.72rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.25s, transform 0.25s;
+    pointer-events: none;
+}
+
+.copied-label.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+
+
+/* Mobile size */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .copied-label {
+        bottom: calc(20% + 5px);
+        font-size: 0.5rem;
+}
+
